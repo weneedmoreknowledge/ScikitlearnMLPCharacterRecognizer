@@ -30,13 +30,13 @@ for character in characters:
 
         #We are feeding it to our trained neural network and displayin the result...
         result = network.predict([test])
-        print "Result : ", result
+        print ("Result : ", result)
         #We are keeping the accuracy statistics...
         if result[0] == character:
             correct_count +=1
         else:
             wrong_count +=1
-        print "score : " , network.score( [ test ]  , [ 'iki'])
-        print "Result : ", network.predict_proba([test])
+        print ("score : " , network.score( [ test ]  , [ 'iki']))
+        print ("Result : ", network.predict_proba([test]))
         
 print("Total accuracy : %f" % (correct_count/(correct_count+wrong_count)*100.0))

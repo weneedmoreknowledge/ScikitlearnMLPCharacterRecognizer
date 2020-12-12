@@ -66,6 +66,6 @@ for b in range(0, 28):
             test.append(0.0)
 
 #We are feeding it to our trained neural network and displayin the final result...
-print "Result : ", network.predict([test])
-print "score : " , network.score( [ test ]  , [ 'iki'])
-print "Result : ", network.predict_proba([test])
+print ("Result : ", network.predict([test]))
+print ("score : " , network.score( [ test ]  , [ 'iki']))
+print ("Result : ", network.predict_proba([test]))

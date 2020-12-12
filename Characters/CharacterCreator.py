@@ -55,7 +55,7 @@ while tus != 27:
             x, y, w, h = boundingRect(contours[index])
             rectangle ( follow_image , ( x , y ) , ( x + w , y + h ) , ( 0,255 ,0 ) )
         imshow ( "Follow" , follow_image )
-        print "Hier : " , hier
+        print ("Hier : " , hier)
 
         #print "Contours" , contours
         #print "Hier : " , hier
@@ -74,16 +74,16 @@ while tus != 27:
     #kucuk resmi kaydediyoruz...
     if tus == ord ( 's' ):
 
-        dosya_adi = karakter_ismi + str ( number ) ;
+        dosya_adi = karakter_ismi + str ( number );
         number += 1
         if resized is not None:
 
             imwrite ( dosya_adi + ".jpg" , resized )
-            print "Resim ismi : " + dosya_adi + ".jpg"
-            print "Resim kaydedildi.."
+            print ("Resim ismi : " + dosya_adi + ".jpg")
+            print ("Resim kaydedildi..")
 
         else:
-            print "Hata : Resim kaydedilmedi..."
+            print ("Hata : Resim kaydedilmedi...")
             number -= 1
 
 
