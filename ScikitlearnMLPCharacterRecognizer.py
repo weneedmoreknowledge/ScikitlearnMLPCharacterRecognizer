@@ -2,8 +2,7 @@ import cv2
 from sklearn import neural_network
 import pickle
 
-#For this sample program we will recognize just three characters....
-resimler = ["A", "B", "C"]
+resimler = ["A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","P","R","S","T","U","V","Y","Z"]
 #The train images are in this directory...
 resim_klasoru = "Characters/"
 #We will hold the samples in these lists...
@@ -55,7 +54,7 @@ pickle.dump ( network , open ( "CharacterRecognizer.ns" , "wb"))
 
 #After training we are testing our nn
 #We are getting an image which has not been included in the train set
-test_image = cv2.imread(resim_klasoru+"A51.jpg")
+test_image = cv2.imread("Test/test.jpg")
 #We are obtaining its vector form in the same form as train samples...
 test = []
 for b in range(0, 28):

@@ -2,14 +2,14 @@ from sklearn import neural_network
 import cv2
 from cv2 import *
 import random
-import pickle
+import pickle 
 
 resim_klasoru = "Characters/"
 
 #We are loding trained nn from the disk....
-network = pickle.load ( open ( 'CharacterRecognizer.ns' , 'rb'))
+network = pickle.load ( open ( 'CharacterRecognizer.ns','rb'))
 #The characters being tested...
-characters = ["A", "B", "C"]
+characters = ["A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","P","R","S","T","U","V","Y","Z"]
 
 correct_count = 0
 wrong_count = 0
